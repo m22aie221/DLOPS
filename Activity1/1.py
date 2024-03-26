@@ -18,7 +18,7 @@ x_random_values = np.sort(x_random_values)
 x = x_random_values;
 
 # Get out for sigmoid funtion
-y_sigmoid = 1 / (1 + np.exp(-x_random_values))
+y_sigmoid = 1 / (1 + np.exp(-x))
 
 
 # get output for Relu
@@ -35,7 +35,7 @@ y_tanh = np.tanh(x)
 plt.figure(figsize=(15, 10))
 
 plt.subplot(2, 2, 1)
-plt.plot(x_random_values, y_sigmoid, label='Sigmoid', color='blue')
+plt.plot(x, y_sigmoid, label='Sigmoid', color='blue')
 plt.title('Sigmoid')
 plt.xlabel('x')
 plt.ylabel('f(x)')
